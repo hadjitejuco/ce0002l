@@ -1,0 +1,21 @@
+//create array, list numbers and find the sum of the numbers
+
+#include <stdio.h>
+int main()
+{
+	int n, i, a[100];
+	int s=0; 
+	printf ("Enter n: ");
+	scanf ("%d",&n);
+	//input
+	for (i=0; i<n;i++){
+		scanf ("%d",&a[i]);
+	}
+	printf ("Entered numbers are ");
+	for (i=0; i<n;i++){
+		printf  ("%d\t",a[i]); //print the entered numbers
+		s = s +a[i];   //compute for the sum of the input numbers
+	}
+	printf ("\nThe sum is %d",s);
+	return 0;
+}
