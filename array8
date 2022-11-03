@@ -1,0 +1,27 @@
+//create array, list the numbers and determine the odd / even numbers
+#include <stdio.h>
+int main()
+{
+	int n, i, a[100];
+	printf ("Enter n: ");
+	scanf ("%d",&n);
+	printf ("\nEnter %d numbers: ",n);
+	//input
+	for (i=0; i<n;i++){
+		scanf ("%d",&a[i]);
+	}		
+	//display the input nubers
+	printf ("list of odd numbers\n");
+	for (i=0; i<n;i++){
+		if (a[i]%2==1){
+			printf ("%d\t",a[i]);
+		}
+	}
+	printf ("\nlist of even numbers\n");
+	for (i=0; i<n;i++){
+		if (a[i]%2==0){
+			printf ("%d\t",a[i]);
+		}
+	}
+	return 0;
+}
