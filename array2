@@ -1,0 +1,22 @@
+//array
+#include <stdio.h>
+int main(){
+	int n,i,a[100]; //a -101 elements start 0-index
+	printf ("Enter n: ");
+	scanf ("%d",&n);    //5
+	printf ("\nEnter %d numbers: ",n);
+	for (i=0; i<n;i++){
+		scanf ("%d",&a[i]); 
+	}
+	printf ("Entered numbers are \n");
+	
+	for (i=0; i<n;i++){
+		printf ("%d\t",a[i]); 
+	}
+	printf ("\na[%d]\n",a[0]);
+	printf ("a[%d]\n",a[1]);
+	printf ("a[%d]\n",a[2]);
+	printf ("a[%d]\n",a[3]);
+	printf ("a[%d]\n",a[4]);
+	return 0;
+}
