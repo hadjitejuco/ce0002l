@@ -1,0 +1,26 @@
+//manually declare array
+#include <stdio.h>
+int main()
+{
+	int i; 
+	            //  0 1 2 3 4
+	int number[] = {1,2,3,4,5};
+	char hello[] = {'H','e','l','l','o'};
+	printf ("\nnumber[%d]\n",number[0]); //1
+	printf ("number[%d]\n",number[1]); //2
+	printf ("number[%d]\n",number[2]); //3
+	printf ("number[%d]\n",number[3]); //4
+	printf ("number[%d]\n",number[4]); //5
+	printf ("\nhello[%c]\n",hello[0]); //H
+	printf ("hello[%c]\n",hello[1]); //e
+	printf ("hello[%c]\n",hello[2]); //l
+	printf ("hello[%c]\n",hello[3]); //l
+	printf ("hello[%c]\n",hello[4]); //o
+	for (i = 0; i<5;i++){
+		printf ("%d \n",number[i]);
+	}
+	for (i = 0; i<5;i++){
+		printf ("%c \n",hello[i]);
+	}
+	return 0;
+}
