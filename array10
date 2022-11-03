@@ -1,0 +1,35 @@
+//Linear search
+//search for a value with in a list
+//input n = 5
+// 1 2 2 4 5
+//enter a number to search - 2
+// number 2 is present at position 2
+// number 2 is present at position 3
+
+#include <stdio.h>
+int main()
+{
+	int n, i, a[100], x, flag=0;
+	printf ("Enter n: ");
+	scanf ("%d",&n);
+	printf ("\nEnter %d numbers \n",n);	
+	//input
+	for (i=0; i<n;i++){
+		scanf ("%d",&a[i]);
+	}
+	printf ("\nEnter a number to search\n");
+	scanf ("%d",&x);
+	//search for the number x
+	for (i=0; i<n;i++){
+		if (a[i]==x){
+			printf ("\n number %d is present at position %d",x,i+1);
+			flag =1;
+		}
+	}
+	if (flag==0)
+		printf ("number not found");
+	return 0;
+}
+
+
+
