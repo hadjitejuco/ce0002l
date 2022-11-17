@@ -1,0 +1,14 @@
+//write string -> fputs() function
+#include <stdio.h>
+int main()
+{
+	FILE *fp;
+	char s[50]; //array
+	fp = fopen("c:\\file\\data3.txt","w");
+	printf ("Enter String: ");
+	gets(s); //gets() accepts string (scanf()) _ terminate
+	fputs(s, fp);
+	fputs("\n", fp);
+	fclose(fp);
+	return 0;
+}
