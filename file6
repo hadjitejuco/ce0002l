@@ -1,0 +1,13 @@
+//fgets() read string values
+#include <stdio.h>
+int main()
+{
+	FILE *fp;
+	char s[50];
+	fp = fopen ("c:\\file\\data3.txt","r");
+	printf ("\nString value: ");
+	fgets(s, 49, fp);
+	printf ("%s", s);
+	fclose(fp);
+	return 0;
+}
