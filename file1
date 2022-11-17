@@ -1,0 +1,19 @@
+//putc and fputc
+//write characters to a file
+#include <stdio.h>
+#include <conio.h>
+int main()
+{
+	FILE *fp;   //file pointer
+	char ch;
+	fp = fopen ("c:\\file\\data.txt","w");
+	printf ("Enter String (ctrl-z to end): "); //ctrl-z break
+	ch = getchar();
+	while (ch != EOF){
+		//putc (ch, fp);
+		fputc (ch, fp);
+		ch = getchar();
+	}	
+	fclose(fp); 
+	return 0;
+}
