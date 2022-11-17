@@ -1,0 +1,21 @@
+//putw
+//write integer values to file
+#include <stdio.h>
+int main()
+{
+	FILE *fp;  
+	int n;
+	fp = fopen ("c:\\file\\data2.txt","w");
+	while(1){
+		printf ("enter number (pres -1 to end ): ");
+		scanf ("%d",&n);
+		if (n == -1)
+			break;
+		putw(n, fp);
+	}
+	fclose(fp);
+	return 0;
+
+	
+
+}
