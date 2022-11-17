@@ -1,0 +1,20 @@
+//structure
+#include <stdio.h>
+struct student {
+	int sno;
+	char name[50];
+	float grade;
+};
+int main()
+{
+	FILE *fp;
+	struct student s;
+	fp = fopen ("c:\\file\\student.txt","r");
+	fscanf (fp, "%d %s %f\n", &s.sno, &s.name, &s.grade);
+	printf ("\nstudent details from file ");
+	printf ("\nStudent no: %d",s.sno);
+	printf ("\nStudent Name: %s",s.name);
+	printf ("\nStudent Grade: %f",s.grade);
+	fclose(fp);
+	return 0;
+}
