@@ -1,0 +1,19 @@
+//getw
+#include <stdio.h>
+int main()
+{
+	FILE *fp;  
+	int n;
+	fp = fopen ("c:\\file\\data2.txt","r");
+	printf ("numbers are : ");
+	n = getw(fp);
+	while(n != EOF ){
+		printf (" %d ",n);
+		n = getw(fp);
+	}
+	fclose(fp);
+	return 0;
+
+	
+
+}
