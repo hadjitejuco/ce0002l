@@ -1,0 +1,15 @@
+//fprintf()
+#include <stdio.h>
+int main()
+{
+	FILE *fp;
+	int sno = 123;
+	char name [50] = "James";
+	float grade = 80.85;	
+
+	fp = fopen ("c:\\file\\data5.txt","w");
+	fprintf (fp, "%d %s %f\n",sno, name, grade);
+	printf ("Student Record saved....");
+	fclose(fp);
+	return 0;
+}
