@@ -1,0 +1,23 @@
+//structure
+#include <stdio.h>
+struct student {
+	int sno;
+	char name[50];
+	float grade;
+};
+int main()
+{
+	FILE *fp;
+	struct student s;
+	fp = fopen ("c:\\file\\student.txt","w");
+	printf ("Enter student no: ");
+	scanf ("%d",&s.sno);
+	printf ("Enter student name: ");
+	fflush(stdin);
+	gets(s.name);
+	printf ("Enter student grade ");
+	scanf ("%f ",&s.grade);
+	fprintf (fp, "%d %s %f\n", s.sno, s.name, s.grade);
+	fclose(fp);
+	return 0;
+}
