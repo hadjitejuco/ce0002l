@@ -1,0 +1,19 @@
+//fscaf()
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+	FILE *fp;
+	int sno;
+	char name[50];
+	float grade;
+	fp = fopen ("c:\\file\\data5.txt","r");
+	fscanf(fp, "%d %s %f ", &sno, &name, &grade);
+	
+	printf ("\nstudent details from file ");
+	printf ("\nStudent no: %d",sno);
+	printf ("\nStudent Name: %s",name);
+	printf ("\nStudent Grade: %f",grade);
+	fclose(fp);
+	return 0;
+}
